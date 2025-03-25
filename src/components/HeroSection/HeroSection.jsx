@@ -4,6 +4,7 @@ import global from "../../assets/images/logo/global.svg";
 import people from "../../assets/images/logo/people.svg";
 import profile from "../../assets/images/logo/profile.svg";
 import heroTitleImage from "../../assets/images/images/heroImage.svg";
+import frame from "../../assets/images/backgrounds/frame.png";
 import { Button } from "../ui/button";
 import InfoTitle from "../Shared/InfoTitle";
 
@@ -70,12 +71,23 @@ function HeroSection() {
               <InfoTitle data={data} />
             </div>
             {/* Bottom Image */}
-            <div className="flex w-full items-center justify-center pt-[78px]">
-              <img
-                className="w-[50%] h-[51vh] object-cover rounded-[4px]"
-                src={heroTitleImage}
-                alt="hero-title-image"
-              />
+            <div className="relative">
+              {/* Background Image */}
+              <div
+                className="absolute inset-0 bg-no-repeat bg-center"
+                style={{
+                  backgroundImage: `url(${frame})`,
+                  opacity: 0.4,
+                }}
+              ></div>
+              {/* Content */}
+              <div className="relative flex w-full items-center justify-center pt-[78px]">
+                <img
+                  className="w-[50%] h-[51vh] object-cover rounded-[4px]"
+                  src={heroTitleImage}
+                  alt="hero-title-image"
+                />
+              </div>
             </div>
           </div>
         </div>

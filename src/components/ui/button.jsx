@@ -23,6 +23,7 @@ const buttonVariants = cva(
         header: "text-white font-medium text-[14px]  bg-[#FF693B] ",
         hero1: "text-white font-medium text-[16px]  bg-[#FF693B] uppercase",
         hero2: "text-white font-medium text-[16px] border uppercase",
+        service: "text-white font-normal text-[14px]  bg-[#FF693B]",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
@@ -32,6 +33,7 @@ const buttonVariants = cva(
         header: "px-[81px] py-[20px] rounded-[4px]",
         hero1: "px-[69px] py-[19px] rounded-[4px]",
         hero2: "px-[21px] py-[19px] rounded-[4px]",
+        service: "px-[46px] py-[16px] rounded-[4px]",
       },
     },
     defaultVariants: {
