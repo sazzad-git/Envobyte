@@ -16,10 +16,10 @@ function Portfolio() {
       id: 1,
       items: [
         {
-          images: [slideOne, slideTwo, slideThree, slideFour],
+          imagesOne: [slideOne, slideTwo, slideThree, slideFour],
         },
         {
-          images: [slideFive, slideSix, slideOne, slideTwo],
+          imagesTwo: [slideFive, slideSix, slideOne, slideTwo],
         },
       ],
     },
@@ -27,28 +27,28 @@ function Portfolio() {
       id: 2,
       items: [
         {
-          images: [slideThree, slideFour, slideFive, slideSix],
+          imagesOne: [slideThree, slideFour, slideFive, slideSix],
         },
         {
-          images: [slideOne, slideTwo, slideThree, slideFour],
+          imagesTwo: [slideOne, slideTwo, slideThree, slideFour],
         },
       ],
     },
   ];
   return (
     <>
-      <div className="">
-        <div className="pt-[280px] w-[92%] mx-auto">
-          {/* Check Service */}
-          <CheckService
-            heading="UI/UX PORTFOLIO"
-            title="Check Our Previous Work"
-            btn="All Portfolio"
-            colorClass={true}
-            activeTab={activeTab}
-            setActiveTab={setActiveTab}
-          />
-        </div>
+      <div className="pt-[300px] w-[92%] mx-auto">
+        {/* Check Service */}
+        <CheckService
+          heading="UI/UX PORTFOLIO"
+          title="Check Our Previous Work"
+          btn="All Portfolio"
+          colorClass={true}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+        />
+      </div>
+      <div className="pt-[59px]">
         <PortfolioSlider slideData={slideData} />
       </div>
     </>

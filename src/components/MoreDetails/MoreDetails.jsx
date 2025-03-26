@@ -7,6 +7,7 @@ import wabTwo from "../../assets/images/backgrounds/wab2.png";
 import { Button } from "../ui/button";
 import DetailsGrid from "./DetailsGrid";
 import Portfolio from "./Portfolio";
+
 function MoreDetails() {
   const detailsData = [
     {
@@ -35,6 +36,7 @@ function MoreDetails() {
         "You're getting web design, development, content writing, social media kit, custom graphics, and business consultation—all in one combo package!",
     },
   ];
+
   return (
     <>
       <div className="bg-white pt-[83px] relative">
@@ -45,24 +47,39 @@ function MoreDetails() {
           Get Your Answers
         </h1>
         <div className="w-[60.48%] mx-auto pb-[38px]">
-          <div className="flex  justify-center pt-[18px]">
+          <div className="flex justify-center pt-[18px]">
             <div className="flex z-10">
               <DetailsGrid detailsData={detailsData} />
             </div>
           </div>
         </div>
 
-        {/* Bottom Background */}
+        {/* Background Section */}
+        <div>
+          {/* First Background Image */}
+          <div
+            className="absolute w-full h-full bg-cover top-[570px] pointer-events-none"
+            style={{ backgroundImage: `url(${wab})` }}
+          ></div>
 
-        <div
-          className="absolute w-full h-full bg-cover top-[570px] pointer-events-none"
-          style={{ backgroundImage: `url(${wab})` }}
-        ></div>
-        <div
-          className="absolute w-full h-full bg-cover top-[570px]"
-          style={{ backgroundImage: `url(${wabTwo})` }}
-        >
-          <Portfolio />
+          {/* Second Background Image */}
+          <div
+            className="absolute w-full h-full bg-cover top-[570px]"
+            style={{ backgroundImage: `url(${wabTwo})` }}
+          >
+            <div className="absolute z-10">
+              <Portfolio />
+              <div className="flex justify-end gap-4 pt-[43px] pr-20">
+                <p className="text-[#353535] text-[14px] font-medium tracking-[4px]">
+                  Creative portfolio
+                </p>
+                <div className="border-b border-[#353535] text-center mb-[10px] w-[60px]"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* White Background (Extra 50vh) */}
+          <div className="absolute top-[calc(570px+100%)] w-full h-[60vh] bg-white"></div>
         </div>
       </div>
     </>

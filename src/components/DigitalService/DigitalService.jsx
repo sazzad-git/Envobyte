@@ -68,7 +68,7 @@ function DigitalService() {
             </div>
             <TopSlider data={data} />
             <div className="flex justify-end gap-4 pt-[60px] pr-5">
-              <p className="text-white text-[14px] font-medium">
+              <p className="text-white text-[14px] font-medium tracking-[4px]">
                 Creative Solution
               </p>
               <div className="border-b text-center mb-[10px] w-[60px]"></div>
