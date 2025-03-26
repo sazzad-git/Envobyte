@@ -58,10 +58,18 @@ function TopSlider() {
                     {item.subtitle}
                   </p>
                   <div className="flex gap-2">
-                    <Button size="portfolio" variant="portfolio">
+                    <Button
+                      className="cursor-pointer"
+                      size="portfolio"
+                      variant="portfolio"
+                    >
                       Portfolio
                     </Button>
-                    <Button size="order" variant="order">
+                    <Button
+                      className="cursor-pointer"
+                      size="order"
+                      variant="order"
+                    >
                       Order
                     </Button>
                   </div>
@@ -70,8 +78,8 @@ function TopSlider() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="cursor-pointer" />
+        <CarouselNext className="cursor-pointer " />
       </Carousel>
     </>
   );

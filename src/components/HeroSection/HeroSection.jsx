@@ -74,7 +74,7 @@ function HeroSection() {
             <div className="relative">
               {/* Background Image */}
               <div
-                className="absolute inset-0 bg-no-repeat bg-center"
+                className="absolute inset-0 bg-no-repeat bg-center pointer-events-none"
                 style={{
                   backgroundImage: `url(${frame})`,
                   opacity: 0.3,
