@@ -24,6 +24,10 @@ const buttonVariants = cva(
         hero1: "text-white font-medium text-[16px]  bg-[#FF693B] uppercase",
         hero2: "text-white font-medium text-[16px] border uppercase",
         service: "text-white font-normal text-[14px]  bg-[#FF693B]",
+        portfolio: "text-white font-normal text-[14px] bg-[#0c89ff]",
+        order: "text-[#0c89ff] font-normal text-[14px] border border-[#0c89ff]",
+        carousel:
+          "bg-[#FF693B] border border-[#FF693B] disabled:border-[#0c89ff] disabled:bg-transparent",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
@@ -34,6 +38,9 @@ const buttonVariants = cva(
         hero1: "px-[69px] py-[19px] rounded-[4px]",
         hero2: "px-[21px] py-[19px] rounded-[4px]",
         service: "px-[46px] py-[16px] rounded-[4px]",
+        portfolio: "px-[36px] py-[13px] rounded-[30px]",
+        order: "px-[23px] py-[13px] rounded-[30px]",
+        carousel: " px-[14px] py-[11px] rounded-[6px]",
       },
     },
     defaultVariants: {

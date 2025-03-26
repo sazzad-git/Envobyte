@@ -17,7 +17,7 @@ function Header() {
     <>
       <div className="pb-[100px]">
         <div className="  bg-opacity-80 fixed top-0 left-0 right-0 z-20 bg-[#03135b] pb-[23px]">
-          <header className="w-[95%] mx-auto mt-[16px] ">
+          <header className="w-[92%] mx-auto mt-[16px] ">
             <nav className="flex justify-between items-center">
               <div className="pt-[5px]">
                 <img className="w-[123px] h-[35px]" src={logo} alt="" />

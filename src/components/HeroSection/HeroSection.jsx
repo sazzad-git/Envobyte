@@ -77,13 +77,13 @@ function HeroSection() {
                 className="absolute inset-0 bg-no-repeat bg-center"
                 style={{
                   backgroundImage: `url(${frame})`,
-                  opacity: 0.4,
+                  opacity: 0.3,
                 }}
               ></div>
               {/* Content */}
               <div className="relative flex w-full items-center justify-center pt-[78px]">
                 <img
-                  className="w-[50%] h-[51vh] object-cover rounded-[4px]"
+                  className="w-[50%] h-[553px] object-cover rounded-[4px]"
                   src={heroTitleImage}
                   alt="hero-title-image"
                 />
