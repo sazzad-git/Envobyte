@@ -28,8 +28,10 @@ const buttonVariants = cva(
           "text-white font-medium text-[16px] border uppercase cursor-pointer",
         service:
           "text-white font-normal text-[14px]  bg-[#FF693B] cursor-pointer",
-        portfolio: "text-white font-normal text-[14px] bg-[#0c89ff]",
-        order: "text-[#0c89ff] font-normal text-[14px] border border-[#0c89ff]",
+        portfolio:
+          "text-white font-normal text-[14px] bg-[#0c89ff] cursor-pointer",
+        order:
+          "text-[#0c89ff] font-normal text-[14px] border border-[#0c89ff] cursor-pointer",
         carousel:
           "bg-[#FF693B] border border-[#FF693B] disabled:border-[#0c89ff] disabled:bg-transparent",
         details:

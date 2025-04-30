@@ -52,7 +52,7 @@ function DetailsGrid({ detailsData }) {
           </div>
         );
       })}
-      <div className="absolute left-[45%] top-[740px]">
+      <div className="absolute left-[45%] top-[740px] z-20">
         <Button variant="details" size="details">
           See Pricing
         </Button>

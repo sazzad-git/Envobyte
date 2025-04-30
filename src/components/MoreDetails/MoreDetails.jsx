@@ -58,7 +58,7 @@ function MoreDetails() {
         <div>
           {/* First Background Image */}
           <div
-            className="absolute w-full h-full bg-cover top-[570px] pointer-events-none"
+            className="absolute w-full h-full bg-cover top-[570px]"
             style={{ backgroundImage: `url(${wab})` }}
           ></div>
 
